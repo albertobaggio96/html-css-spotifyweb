@@ -33,6 +33,10 @@ ul{
   justify-content: space-between;
 }
 
+.space-around{
+  justify-content: space-around;
+}
+
 /* END FLEX */
 
 /* POSITION */
@@ -73,9 +77,43 @@ header nav>div{
 main{
   background-color: red;
   width: calc(100vw - 230px);
+  height: calc(100vh - 100px);
   flex-grow: 1;
-  overflow-y: auto;
+  overflow: auto;
 }
+/* UPGRADE */
+#upgrade{
+  height: 4rem;
+  background-color: gray;
+}
+
+#upgrade button{
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+/* END UPGRADE */
+
+/* PLAYLIST */
+#playlist{
+  padding: 16px;
+}
+#playlist>div{
+  width: calc(100% / 6);
+  max-width: 200px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+#playlist>div img{
+  width: 95%;
+}
+/* END PLAYLIST */
+
 /* END MAIN */
 
 

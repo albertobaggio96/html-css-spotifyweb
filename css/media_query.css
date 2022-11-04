@@ -1,0 +1,32 @@
+/* medium */
+@media screen and (max-width: 991px){
+
+  #playlist{
+    justify-content: flex-start;
+  }
+
+  #playlist>div{
+    width: calc(100% / 4);
+    max-width: none;
+  }
+}
+
+/* small */
+@media screen and (max-width: 767px) {
+
+  #playlist>div{
+    width: calc(100% / 2);
+    max-width: none;
+  }
+}
+
+/* x-small */
+@media screen and (max-width: 576px){
+  header{
+    width: 40px;
+  }
+
+  header>nav{
+    padding: 8px;
+  }
+}
