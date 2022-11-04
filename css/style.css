@@ -8,15 +8,46 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* FLEX */
+.flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+/* END FLEX */
+
 /* HEADER */
+header{
+  background-color: black;
+  height: calc(100vh - 100px);
+  width: 230px;
+}
 /* END HEADER */
 
 
 
 /* MAIN */
+main{
+  background-color: red;
+  width: calc(100vw - 230px);
+  flex-grow: 1;
+  overflow-y: auto;
+}
 /* END MAIN */
 
 
 
 /* FOOTER */
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+}
 /* END FOOTER */
