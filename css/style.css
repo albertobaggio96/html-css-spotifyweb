@@ -10,13 +10,17 @@ body{
   color: white;
 }
 
+a{
+  text-decoration: none;
+  color: gray;
+}
+
 ul{
   margin-bottom: .5rem;
 }
 
 ul li{
   list-style: none;
-  padding-bottom: .6rem;
 }
 
 hr{
@@ -36,8 +40,16 @@ hr{
   align-items: flex-start;
 }
 
+.a-i-center{
+  align-items: center;
+}
+
 .j-c-end{
   justify-content: end;
+}
+
+.j-c-center{
+  justify-content: center;
 }
 
 .wrap{
@@ -52,6 +64,7 @@ hr{
   justify-content: space-around;
 }
 
+/* END FLEX */
 .bold{
   font-weight: 900;
 }
@@ -59,9 +72,6 @@ hr{
 .clr-white{
   color: white;
 }
-
-/* END FLEX */
-
 /* POSITION */
 .relative{
 position: relative;
@@ -92,13 +102,17 @@ header nav{
   padding: .6rem;
 }
 
-nav img{
+header nav img{
   height: 2rem;
   margin-bottom: 16px;
 }
 
 header nav>div{
   height: 100%;
+}
+
+header ul li{
+  padding-bottom: .6rem;
 }
 /* END HEADER */
 
@@ -116,11 +130,12 @@ main{
 #upgrade{
   height: 4rem;
   background-color: gray;
+  padding: 0 5px;
 }
 
 #upgrade button{
   text-transform: uppercase;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border-radius: 30px;
@@ -128,6 +143,15 @@ main{
 }
 
 /* END UPGRADE */
+
+/* DISCOVER */
+#discover{
+}
+
+#discover li{
+  text-transform: uppercase;
+  padding: .8rem;
+}
 
 /* PLAYLIST */
 #playlist{
