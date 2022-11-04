@@ -8,9 +8,21 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+ul{
+  list-style: none;
+}
+
 /* FLEX */
 .flex{
   display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.j-c-end{
+  justify-content: end;
 }
 
 .wrap{
@@ -23,11 +35,35 @@ body{
 
 /* END FLEX */
 
+/* POSITION */
+.relative{
+position: relative;
+}
+
+.absolute{
+position: absolute;
+}
+/* END POSITION */
+
+.clr-gray{
+  color: gray;
+}
+
 /* HEADER */
 header{
   background-color: black;
   height: calc(100vh - 100px);
   width: 230px;
+
+}
+
+header nav{
+  height: 100%;
+  padding: 1rem;
+}
+
+header nav>div{
+  height: 100%;
 }
 /* END HEADER */
 
