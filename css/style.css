@@ -83,8 +83,22 @@ hr{
   padding: 0 16px;
 }
 
-.card img{
+.card img,
+figure{
   width: calc(100% - 8px);
+  object-fit: cover;
+}
+
+.card{
+  width: calc(100% / 6);
+  max-width: 170px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.card-five{
+  width: calc(100% / 5);
+  max-width: 200px;
 }
 
 .clr-gray{
@@ -167,25 +181,21 @@ main>section>h2{
 }
 
 /* PLAYLIST */
-#playlist .card{
-  width: calc(100% / 6);
-  max-width: 170px;
-  margin-top: 8px;
-  text-align: center;
-}
-
 /* END PLAYLIST */
-#created-for .card{
-  width: calc(100% / 5);
-  max-width: 200px;
-  margin-top: 8px;
-  text-align: center;
-}
 
 /* CREATED FOR */
-
-
 /* END CREATED FOR */
+
+/* POPULAR ARTIST */
+section figure{
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+#popular-artist img{
+  width: 100%;
+}
+/* END POPULAR ARTIST */
 
 /* END MAIN */
 
