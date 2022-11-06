@@ -1,11 +1,11 @@
 /* medium */
 @media screen and (max-width: 991px){
 
-  #playlist{
+  #playlist .flex.cards{
     justify-content: flex-start;
   }
 
-  #playlist>div{
+  #playlist .card{
     width: calc(100% / 4);
     max-width: none;
   }
@@ -14,7 +14,7 @@
 /* small */
 @media screen and (max-width: 767px) {
 
-  #playlist>div{
+  #playlist .card{
     width: calc(100% / 2);
     max-width: none;
   }

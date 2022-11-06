@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  font-size: .8rem;
+  font-size: .7rem;
   color: white;
 }
 
@@ -15,9 +15,6 @@ a{
   color: gray;
 }
 
-ul{
-  margin-bottom: .5rem;
-}
 
 ul li{
   list-style: none;
@@ -74,11 +71,11 @@ hr{
 }
 /* POSITION */
 .relative{
-position: relative;
+  position: relative;
 }
 
 .absolute{
-position: absolute;
+  position: absolute;
 }
 /* END POSITION */
 
@@ -111,6 +108,10 @@ header nav>div{
   height: 100%;
 }
 
+header ul{
+  margin-bottom: .5rem;
+}
+
 header ul li{
   padding-bottom: .6rem;
 }
@@ -128,7 +129,7 @@ main{
 }
 /* UPGRADE */
 #upgrade{
-  height: 4rem;
+  height: 3.5rem;
   background-color: gray;
   padding: 0 5px;
 }
@@ -140,6 +141,7 @@ main{
   color: white;
   border-radius: 30px;
   border: 1px solid white;
+  font-size: .7rem;
 }
 
 /* END UPGRADE */
@@ -151,20 +153,21 @@ main{
 #discover li{
   text-transform: uppercase;
   padding: .8rem;
+  margin: 0;
 }
 
 /* PLAYLIST */
 #playlist{
-  padding: 16px;
+  padding: 0 16px;
 }
-#playlist>div{
+#playlist .card{
   width: calc(100% / 6);
   max-width: 200px;
   margin-top: 16px;
   text-align: center;
 }
 
-#playlist>div img{
+#playlist .card img{
   width: calc(100% - 8px);
 }
 /* END PLAYLIST */
