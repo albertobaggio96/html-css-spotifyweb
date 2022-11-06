@@ -86,8 +86,12 @@ hr{
 .card img,
 figure{
   width: calc(100% - 8px);
-  object-fit: cover;
 }
+
+.card img{
+  object-fit: contain;
+}
+
 
 .card{
   width: calc(100% / 6);
@@ -188,13 +192,24 @@ main>section>h2{
 
 /* POPULAR ARTIST */
 section figure{
+  width: 90%;
+  height: 0;
+  padding-top: 90%; 
   border-radius: 100%;
+  position: relative;
   overflow: hidden;
 }
 
+
 #popular-artist img{
-  width: 100%;
+  width:100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
+
+
 /* END POPULAR ARTIST */
 
 /* END MAIN */
@@ -202,9 +217,6 @@ section figure{
 
 
 /* FOOTER */
-footer{
-  height: 100px;
-  width: 100%;
-  background-color: grey;
-}
+
 /* END FOOTER */
+
