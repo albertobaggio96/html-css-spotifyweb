@@ -79,9 +79,18 @@ hr{
 }
 /* END POSITION */
 
+.container{
+  padding: 0 16px;
+}
+
+.card img{
+  width: calc(100% - 8px);
+}
+
 .clr-gray{
   color: gray;
 }
+
 
 /* HEADER */
 header{
@@ -127,6 +136,10 @@ main{
   flex-grow: 1;
   overflow: auto;
 }
+
+main>section>h2{
+  padding-left: 4px;
+}
 /* UPGRADE */
 #upgrade{
   height: 3.5rem;
@@ -147,9 +160,6 @@ main{
 /* END UPGRADE */
 
 /* DISCOVER */
-#discover{
-}
-
 #discover li{
   text-transform: uppercase;
   padding: .8rem;
@@ -157,20 +167,25 @@ main{
 }
 
 /* PLAYLIST */
-#playlist{
-  padding: 0 16px;
-}
 #playlist .card{
   width: calc(100% / 6);
-  max-width: 200px;
-  margin-top: 16px;
+  max-width: 170px;
+  margin-top: 8px;
   text-align: center;
 }
 
-#playlist .card img{
-  width: calc(100% - 8px);
-}
 /* END PLAYLIST */
+#created-for .card{
+  width: calc(100% / 5);
+  max-width: 200px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* CREATED FOR */
+
+
+/* END CREATED FOR */
 
 /* END MAIN */
 

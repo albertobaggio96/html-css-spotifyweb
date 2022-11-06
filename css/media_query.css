@@ -1,23 +1,30 @@
 /* medium */
 @media screen and (max-width: 991px){
 
-  #playlist .flex.cards{
+  .flex.cards{
     justify-content: flex-start;
   }
 
-  #playlist .card{
+  #playlist .card,
+  #created-for .card{
     width: calc(100% / 4);
     max-width: none;
+  }
+
+  #created-for .card.d-none{
+    display: none;
   }
 }
 
 /* small */
 @media screen and (max-width: 767px) {
 
-  #playlist .card{
+  #playlist .card,
+  #created-for .card{
     width: calc(100% / 2);
     max-width: none;
   }
+
 }
 
 /* x-small */
