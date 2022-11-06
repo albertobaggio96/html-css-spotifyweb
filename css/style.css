@@ -10,6 +10,7 @@ body{
   color: white;
 }
 
+
 a{
   text-decoration: none;
   color: gray;
@@ -80,7 +81,11 @@ hr{
 /* END POSITION */
 
 .container{
-  padding: 0 16px;
+  margin: 16px;
+}
+
+.m-up{
+  margin-top: 1rem;
 }
 
 .card img,
@@ -90,6 +95,7 @@ figure{
 
 .card img{
   object-fit: contain;
+  padding-bottom: .3rem;
 }
 
 
@@ -107,6 +113,10 @@ figure{
 
 .clr-gray{
   color: gray;
+}
+
+h3{
+  padding-bottom: .3rem;
 }
 
 
@@ -156,7 +166,8 @@ main{
 }
 
 main>section>h2{
-  padding-left: 4px;
+  padding: 16px 0 8px 4px;
+
 }
 /* UPGRADE */
 #upgrade{
@@ -196,14 +207,12 @@ section figure{
   height: 0;
   padding-top: 90%; 
   border-radius: 100%;
-  position: relative;
   overflow: hidden;
 }
 
 
 #popular-artist img{
   width:100%;
-  position: absolute;
   top: 0;
   right: 0;
 }
