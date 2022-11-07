@@ -63,13 +63,7 @@ hr{
 }
 
 /* END FLEX */
-.bold{
-  font-weight: 900;
-}
 
-.clr-white{
-  color: white;
-}
 /* POSITION */
 .relative{
   position: relative;
@@ -95,7 +89,7 @@ figure{
 
 .card img{
   object-fit: contain;
-  padding-bottom: .3rem;
+  /* padding-bottom: 5px; */
 }
 
 
@@ -114,8 +108,25 @@ figure{
   color: #a3a3a3;
 }
 
+.clr-white{
+  color: white;
+}
+
+.bold{
+  font-weight: 900;
+}
+
 h3{
   padding-bottom: .3rem;
+}
+
+a:hover{
+  color: white;
+  font-weight: bold;
+}
+
+a:hover i{
+  background-color: white;
 }
 
 
@@ -230,7 +241,17 @@ main>section>h2{
   border-radius: 30px;
   border: 1px solid white;
   font-size: .5rem;
+  transition: .4s;
 }
+
+#upgrade button:hover{
+  padding: .7rem 1.7rem;
+}
+
+#upgrade button:active{
+  padding: .5rem 1.5rem;
+}
+
 
 /* END UPGRADE */
 
@@ -242,13 +263,32 @@ main>section>h2{
 }
 
 /* PLAYLIST */
+.play-container img.absolute{
+  display: none;
+  transition: .2s;
+}
+
+.card:hover .play-container img.absolute{
+  display: inline-block;
+  top: 0;
+  left: 0;
+  padding: 10%;
+  background-color: #28282875;
+}
+
+.card:active .play-container img.absolute{
+  padding: 13%;
+  opacity: .9;
+}
+
+
 /* END PLAYLIST */
 
 /* CREATED FOR */
 /* END CREATED FOR */
 
 /* POPULAR ARTIST */
-section figure{
+section figure.rounded{
   width: 90%;
   height: 0;
   padding-top: 90%; 

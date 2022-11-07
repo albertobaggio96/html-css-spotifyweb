@@ -28,11 +28,11 @@
         <img src="img/logo.svg" alt="logo" class="hide">
         <img src="img/logo-small.svg" alt="logo" class="d-none">
         <ul>
-          <li><img src="img/home.svg" alt="home icon"><a>Home</a></li>
-          <li><img src="img/search.svg" alt="search icon"><a>Cerca</a></li>
-          <li><img src="img/libreria.svg" alt="library icon"><a>La tua libreria</a></li>
+          <li><img src="img/home.svg" alt="home icon"><a href="#">Home</a></li>
+          <li><img src="img/search.svg" alt="search icon"><a href="#">Cerca</a></li>
+          <li><img src="img/libreria.svg" alt="library icon"><a href="#">La tua libreria</a></li>
         </ul>
-        <h3 class="display">PLAYLIST</h3>
+        <h3 class="display clr-white">PLAYLIST</h3>
         <ul>
           <li><a href="#"><i class="fa-solid fa-plus"></i> Cerca Playlist </a></li>
           <li><a href="#">Nome Playlist</a></li>
@@ -43,12 +43,12 @@
           <li><a href="#">Nome Playlist</a></li>
         </ul>
         <div class="flex flex-column j-c-end a-i-start">
-          <div class="border-b"><img src="img/download.svg" alt="download"><a> Installa app</a></div>
+          <div class="border-b"><img src="img/download.svg" alt="download"><a href="#"> Installa app</a></div>
           <div class="bold clr-white flex a-i-center">
             <figure class="relative">
               <img src="img/profile.svg" alt="profile" class="bck-gray absolute">
             </figure>
-            <a class="clr-white">John Doe</a> 
+            <a href="#" class="clr-white">John Doe</a> 
           </div>
         </div>
       </nav>
@@ -79,37 +79,55 @@
         <h2>Recently player</h2>
         <div class="flex wrap cards">
           <article class="card">
-            <img src="img/metal_lifting.jpg" alt="metal lifting">
+            <div class="play-container relative">
+              <img src="img/metal_lifting.jpg" alt="metal lifting">
+              <img src="img/play.png" alt="play button" class="absolute">
+            </div>
             <h3>Heavy Metal</h3>
             <div class="clr-gray">Subtitle</div>
           </article>
   
           <article class="card">
-            <img src="img/stranger.jpeg" alt="stranger things">
+            <div class="play-container relative">
+              <img src="img/stranger.jpeg" alt="stranger things">
+              <img src="img/play.png" alt="play button" class="absolute"> 
+            </div>
             <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
             <div class="clr-gray">Kyle Dixson & Micheal Stein</div>
           </article>
   
           <article class="card">
-            <img src="img/aquietplace.jpeg" alt="a quiet place">
+            <div class="play-container relative">
+              <img src="img/aquietplace.jpeg" alt="a quiet place">
+              <img src="img/play.png" alt="play button" class="absolute">
+            </div>
             <h3>A quiet place</h3>
             <div class="clr-gray">Subtitle</div>
           </article>
   
           <article class="card">
-            <img src="img/split.jpeg" alt="">
+            <div class="play-container relative">
+              <img src="img/split.jpeg" alt="split">
+              <img src="img/play.png" alt="play button" class="absolute">
+            </div>
             <h3>Split</h3>
             <div class="clr-gray">Subtitle</div>
           </article>
   
           <article class="card">
-            <img src="img/cure.jpeg" alt="a cure for wellnes">
+            <div class="play-container relative">
+              <img src="img/cure.jpeg" alt="a cure for wellnes">
+              <img src="img/play.png" alt="play button" class="absolute">
+            </div>
             <h3>A cure for wellnes</h3>
             <div class="clr-gray">Subtitle</div>
           </article>
   
           <article class="card">
-            <img src="img/sinister.jpeg" alt="sinister">
+            <div class="play-container relative">
+              <img src="img/sinister.jpeg" alt="sinister">
+              <img src="img/play.png" alt="play button" class="absolute">
+            </div>
             <h3>Sinister</h3>
             <div class="clr-gray">Subtitle</div>
           </article>
@@ -127,7 +145,7 @@
           </article>
           
           <article class="card card-five">
-            <img src="img/mixdaily.jpeg" alt="mixdaily">
+              <img src="img/mixdaily.jpeg" alt="mixdaily">
             <h3>Dally Mix 1</h3>
           </article>
           </article>
