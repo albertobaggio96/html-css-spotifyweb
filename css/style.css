@@ -13,7 +13,7 @@ body{
 
 a{
   text-decoration: none;
-  color: gray;
+  color: #a3a3a3;
 }
 
 
@@ -112,7 +112,7 @@ figure{
 }
 
 .clr-gray{
-  color: gray;
+  color: #a3a3a3;
 }
 
 h3{
@@ -136,21 +136,68 @@ header nav{
   padding: .6rem;
 }
 
-header nav img{
+header nav>img{
   height: 2rem;
   margin-bottom: 16px;
 }
 
 header nav>div{
   height: 100%;
+  width: 100%;
 }
 
 header ul{
   margin-bottom: .5rem;
 }
 
-header ul li{
-  padding-bottom: .6rem;
+header ul li,
+img.d-none{
+  padding-bottom: .7rem;
+}
+
+header li>img,
+header div img,
+img.d-none{
+  width: 19px;
+  vertical-align: middle;
+  padding-right: .2rem;
+}
+
+li i{
+  font-size: 1rem;
+  color: black;
+  background-color: #a3a3a3;
+  padding: .5rem;
+  margin-right: .2rem;
+  
+}
+
+header figure{
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  background-color: #a3a3a3;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: .2rem;
+}
+
+header figure img{
+  width:100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+img.d-none{
+  display: none;
+}
+
+div.border-b{
+  border-bottom: 2px solid #a3a3a3;
+}
+
+header nav>div>div{
+  padding:.6rem 0;
 }
 /* END HEADER */
 
