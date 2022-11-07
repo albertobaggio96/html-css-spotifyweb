@@ -1,13 +1,8 @@
 /* medium */
 @media screen and (max-width: 991px){
 
-  .flex.cards{
-    justify-content: flex-start;
-  }
-
   .card{
     width: calc(100% / 4);
-    max-width: none;
   }
 
   .card.d-none{

@@ -90,7 +90,7 @@ hr{
 
 .card img,
 figure{
-  width: calc(100% - 8px);
+  max-width: calc(100%);
 }
 
 .card img{
@@ -101,14 +101,13 @@ figure{
 
 .card{
   width: calc(100% / 6);
-  max-width: 170px;
   margin-top: 8px;
   text-align: center;
+  padding: 4px;
 }
 
 .card-five{
   width: calc(100% / 5);
-  max-width: 200px;
 }
 
 .clr-gray{
