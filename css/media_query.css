@@ -26,7 +26,9 @@
     width: 40px;
   }
 
-  .display{
+  header a,
+  header h3,
+  header img.hide{
     display: none;
   }
 
@@ -36,13 +38,12 @@
   }
 
   header li>img,
-  header div img,
   img.d-none{
     padding-right: 0;
   }
 
 
-  img.d-none
+  img.d-none,s
   header figure{
     display: inline;
     margin: 0;
