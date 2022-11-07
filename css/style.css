@@ -307,9 +307,6 @@ section figure.rounded{
   top: 0;
   right: 0;
 }
-
-
-
 /* END POPULAR ARTIST */
 
 /* END MAIN */
@@ -320,6 +317,24 @@ section figure.rounded{
   footer{
     height: 50px;
     background-color: #282828;
+    padding: 8px;
+    font-size: .5rem;
   }
+
+  #music-playing div,
+  #music-playing h2,
+  #music-playing img,
+  #music-playing i{
+    margin-right: 9px;
+  }
+
+  footer i{
+    font-size: .8rem;
+  }
+
+  footer img{
+    width: 30px;
+  }
+
 /* END FOOTER */
 
