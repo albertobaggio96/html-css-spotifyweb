@@ -89,7 +89,7 @@ figure{
 
 .card img{
   object-fit: contain;
-  /* padding-bottom: 5px; */
+  padding-bottom: 5px;
 }
 
 
@@ -288,10 +288,15 @@ main>section>h2{
 /* END CREATED FOR */
 
 /* POPULAR ARTIST */
+.rounded-container{
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 section figure.rounded{
-  width: 90%;
+  width: 100%;
   height: 0;
-  padding-top: 90%; 
+  padding-top: 100%; 
   border-radius: 100%;
   overflow: hidden;
 }
