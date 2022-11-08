@@ -21,8 +21,8 @@ ul li{
   list-style: none;
 }
 
-hr{
-  margin: .6rem 0;
+h3{
+  padding-bottom: .3rem;
 }
 
 /* FLEX */
@@ -124,9 +124,10 @@ figure{
   font-weight: 900;
 }
 
-h3{
-  padding-bottom: .3rem;
+.border-cento{
+  border-radius: 100%;
 }
+
 
 a:hover{
   color: white;
@@ -191,8 +192,7 @@ img.d-none{
   color: black;
   background-color: #a3a3a3;
   padding: .5rem;
-  margin-right: .2rem;
-  margin-bottom: .7rem;
+  margin: 0 .2rem .7rem 0;
 }
 /* END UP-NAV */
 
@@ -216,7 +216,6 @@ img.d-none{
   width: 19px;
   height: 19px;
   background-color: #a3a3a3;
-  border-radius: 100%;
   overflow: hidden;
   margin-right: .2rem;
 }
@@ -327,7 +326,6 @@ main .maxim{
   width: 100%;
   height: 0;
   padding-top: 100%; 
-  border-radius: 100%;
   overflow: hidden;
 }
 
@@ -455,7 +453,6 @@ main .maxim{
   div.circle-pointer{
     width: 10px;
     height: 10px;
-    border-radius: 100%;
     background-color: #c3c3c3;
     left: calc(30% - 4px);
     top: -4px;
