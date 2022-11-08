@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: .6rem;
   color: white;
 }
@@ -324,7 +324,7 @@ section figure.rounded{
   #music-playing div,
   #music-playing h2,
   #music-playing img,
-  #music-playing i{
+  footer i{
     margin-right: 9px;
   }
 
@@ -335,6 +335,8 @@ section figure.rounded{
   footer img{
     width: 30px;
   }
+
+  
 
 /* END FOOTER */
 
