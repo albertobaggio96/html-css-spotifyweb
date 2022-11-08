@@ -368,6 +368,7 @@ main .maxim{
     width: 30px;
   }
 
+/* MUSIC PLAYING */
   #music-playing i:hover{
     color: white;
   }
@@ -377,26 +378,25 @@ main .maxim{
     text-decoration: underline;
     font-weight: bold;
   }
+/* END MUSIC PLAYING */
 
+/* PLAY COMMAND */
   #play-command{
     width: 35%;
   }
 
-  #volume{
-    width: 150px;
-  }
-
+  
   #play-command i{
     font-size: 1rem;
     margin-right: 1rem;
   }
-
+  
   
   #play-command i.no-margin{
     margin: 0;
   }
   
-  .play-relative{
+  #play-command .play-relative{
     width: 3rem;
   }
   
@@ -410,26 +410,34 @@ main .maxim{
   #play-command i.fa-circle-play:hover{
     font-size: 1.3rem;
   }
-
-  div.music-minute{
+  
+  
+  #play-command div.music-minute{
     width: 100%;
     margin-top: 5px;
   }
-
-  div.music-minute span{
+  
+  #play-command div.music-minute span{
     padding: 0 5px;
   }
-
-  div.minute-bar{
+  
+  #play-command div.minute-bar{
     width: 80%;
     margin-top: calc(.25rem - 3px);
   }
-
-  div.volume-bar{
+  /* END PLAY COMMAND */
+  
+  /* VOLUME */
+  #volume div.volume-bar{
     width: 80%;
   }
+  
+  #volume{
+    width: 150px;
+  }
+/* END VOLUME */
 
-
+  /* BARS FUNCTION */
   div.actual{
     width: 30%;
     height: 3px;
@@ -463,8 +471,7 @@ main .maxim{
   div.volume-bar:hover div.actual{
     background-color: green;
   }
-
-
+  /* END BARS FUNTION */
 
 /* END FOOTER */
 
