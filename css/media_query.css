@@ -1,5 +1,5 @@
 /* medium */
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
 
   .card{
     width: calc(100% / 4);
@@ -15,7 +15,7 @@
 }
 
 /* small */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
   .card{
     width: calc(100% / 2);
