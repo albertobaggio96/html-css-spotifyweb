@@ -133,7 +133,7 @@ a:hover i{
 /* HEADER */
 header{
   background-color: black;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   width: 170px;
 }
 
@@ -217,7 +217,7 @@ header nav>div>div{
 main{
   background-color: #141922;
   width: calc(100vw - 170px);
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   flex-grow: 1;
   overflow: auto;
 }
@@ -315,10 +315,11 @@ section figure.rounded{
 
 /* FOOTER */
   footer{
-    height: 50px;
+    height: 60px;
     background-color: #282828;
     padding: 8px;
     font-size: .5rem;
+    width: 100%;
   }
 
   #music-playing div,
@@ -328,7 +329,7 @@ section figure.rounded{
     margin-right: 9px;
   }
 
-  footer i{
+  #music-playing i{
     font-size: .8rem;
   }
 
@@ -336,7 +337,78 @@ section figure.rounded{
     width: 30px;
   }
 
-  
+  #play-command{
+    width: 35%;
+  }
+
+  #volume{
+    width: 150px;
+  }
+
+  #play-command i{
+    font-size: 1rem;
+    margin-right: 16px;
+  }
+
+  #play-command i.fa-circle-play:hover{
+    font-size: 1.3rem;
+  }
+
+
+  div.music-minute{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  div.music-minute span{
+    padding: 0 5px;
+  }
+
+  div.minute-bar{
+    width: 80%;
+    margin-top: calc(.25rem - 3px);
+  }
+
+  div.volume-bar{
+    width: 80%;
+  }
+
+
+  div.actual{
+    width: 30%;
+    height: 3px;
+    background-color: red;
+    border-radius: 2px;
+  }
+
+  div.miss{
+    width: 70%;
+    height: 3px;
+    background-color: blue;
+    border-radius: 2px;
+  }
+
+  div.circle-pointer{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: aquamarine;
+    left: calc(30% - 4px);
+    top: -2.5px;
+    display: none;
+  }
+
+  div.minute-bar:hover div.circle-pointer,
+  div.volume-bar:hover div.circle-pointer{
+    display: block;
+  }
+
+  div.minute-bar:hover div.actual, 
+  div.volume-bar:hover div.actual{
+    background-color: green;
+  }
+
+
 
 /* END FOOTER */
 

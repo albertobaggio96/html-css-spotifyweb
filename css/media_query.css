@@ -52,4 +52,8 @@
   header>nav{
     padding: 8px;
   }
+
+  footer img{
+    width: 20px;
+  }
 }

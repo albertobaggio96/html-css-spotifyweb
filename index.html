@@ -183,7 +183,7 @@
     </main>
   
   </div>
-  <footer class="flex space-between">
+  <footer class="flex space-between a-i-center">
     <section id="music-playing" class="flex a-i-center">
       <img src="img/sinister.jpeg" alt="sinister">
       <div>
@@ -198,16 +198,19 @@
     </section>
 
     <section id="play-command" class="flex flex-column a-i-center">
-      <div class="">
+      <div class="play-button">
         <i class="fa-solid fa-shuffle clr-white"></i>
         <i class="fa-solid fa-caret-left clr-white"></i>
         <i class="fa-regular fa-circle-play clr-white"></i>
         <i class="fa-solid fa-caret-right clr-white"></i>
+        <i class="fa-solid fa-rotate-right"></i>
       </div>
-      <div class="flex">
+      <div class="flex music-minute a-i-center">
         <span>0.25</span>
-        <div class="opacity">
-          
+        <div class="minute-bar relative flex">
+          <div class="actual"></div>
+          <div class="circle-pointer absolute"></div>
+          <div class="miss"></div>
         </div>
         <span>4.35</span>
       </div>
@@ -217,8 +220,10 @@
       <i class="fa-solid fa-list"></i>
       <i class="fa-solid fa-desktop"></i>
       <i class="fa-solid fa-volume-high"></i>
-      <div class="opacity">
-
+      <div class="volume-bar relative flex">
+        <div class="actual"></div>
+        <div class="circle-pointer absolute"></div>
+        <div class="miss"></div>
       </div>
 
 
