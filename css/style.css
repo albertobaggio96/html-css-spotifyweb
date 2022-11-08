@@ -88,7 +88,7 @@ hr{
 
 .card img,
 figure{
-  max-width: calc(100%);
+  max-width: 100%;
 }
 
 .card img{
@@ -273,8 +273,6 @@ main>section>h2{
 #upgrade button:active{
   padding: .5rem 1.5rem;
 }
-
-
 /* END UPGRADE */
 
 /* DISCOVER */
@@ -292,8 +290,11 @@ main>section>h2{
 
 .card:hover .play-container img.absolute{
   display: inline-block;
+  max-width: 300px;
+  width: 100%;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate( -50%);
   padding: 10%;
   background-color: #28282875;
 }
@@ -302,8 +303,6 @@ main>section>h2{
   padding: 13%;
   opacity: .9;
 }
-
-
 /* END PLAYLIST */
 
 /* CREATED FOR */
