@@ -8,6 +8,10 @@
   .card.d-none{
     display: none;
   }
+
+  #playlist .space-between{
+    justify-content: flex-start;
+  }
 }
 
 /* small */

@@ -98,10 +98,14 @@ figure{
 
 
 .card{
-  width: calc(100% / 6);
   margin-top: 8px;
   text-align: center;
   padding: 4px;
+}
+
+.card-six{
+  width: calc(100% / 6);
+  max-width: 308px;
 }
 
 .card-five{
@@ -248,6 +252,11 @@ main>section>h2{
   padding: 16px 0 8px 4px;
   
 }
+
+main .maxim{
+  max-width: 328px;
+}
+
 /* UPGRADE */
 #upgrade{
   height: 3.5rem;
@@ -309,12 +318,12 @@ main>section>h2{
 /* END CREATED FOR */
 
 /* POPULAR ARTIST */
-.rounded-container{
+#popular-artist .rounded-container{
   max-width: 320px;
   margin: 0 auto;
 }
 
-section figure.rounded{
+#popular-artist figure.rounded{
   width: 100%;
   height: 0;
   padding-top: 100%; 
@@ -458,3 +467,19 @@ section figure.rounded{
 
 
 /* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
