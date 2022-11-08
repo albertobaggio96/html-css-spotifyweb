@@ -24,25 +24,32 @@
   <div class="flex">
 
     <header class="clr-gray">
-      <nav class="flex flex-column a-i-start">
-        <img src="img/logo.svg" alt="logo" class="hide">
-        <img src="img/logo-small.svg" alt="logo" class="d-none">
-        <ul>
-          <li><img src="img/home.svg" alt="home icon"><a href="#">Home</a></li>
-          <li><img src="img/search.svg" alt="search icon"><a href="#">Cerca</a></li>
-          <li><img src="img/libreria.svg" alt="library icon"><a href="#">La tua libreria</a></li>
-        </ul>
-        <h3 class="display clr-white">PLAYLIST</h3>
-        <ul>
-          <li><a href="#"><i class="fa-solid fa-plus"></i> Cerca Playlist </a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-        </ul>
-        <div class="flex flex-column j-c-end">
+      <nav class="flex flex-column a-i-">
+        <section id="up-nav">
+          <img src="img/logo.svg" alt="logo" class="hide">
+          <img src="img/logo-small.svg" alt="logo" class="d-none">
+          <ul>
+            <li><img src="img/home.svg" alt="home icon"><a href="#" class="clr-white bold">Home</a></li>
+            <li><img src="img/search.svg" alt="search icon"><a href="#">Cerca</a></li>
+            <li><img src="img/libreria.svg" alt="library icon"><a href="#">La tua libreria</a></li>
+            <h3 class="display clr-white">PLAYLIST</h3>
+            <div><a href="#"><i class="fa-solid fa-plus"></i> Cerca Playlist </a></div>
+            <div class="over-flow-container">
+          </ul>
+        </section>
+        <section class="over-flow-container" id="new-playlist">
+          <ul>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </section>
+              
+
+        <section id="low-nav" class="flex flex-column j-c-end">
           <div class="border-b flex a-i-center"><img src="img/download.svg" alt="download"><a href="#"> Installa app</a></div>
           <div class="bold clr-white flex a-i-center">
               <figure class="relative">
@@ -50,7 +57,7 @@
               </figure>
             <a href="#" class="clr-white">John Doe</a> 
           </div>
-        </div>
+        </section>
       </nav>
     </header>
   
@@ -183,12 +190,12 @@
     </main>
   
   </div>
-  <footer class="flex space-between a-i-center">
+  <footer class="flex space-between a-i-center relative">
     <section id="music-playing" class="flex a-i-center">
       <img src="img/sinister.jpeg" alt="sinister">
       <div>
         <h2>Sinister</h2>
-        <div class="clr-gray">Brano Nome</div>
+        <div class="clr-gray underline">Brano Nome</div>
       </div>
       <div>
         <i class="fa-regular fa-heart clr-gray"></i>
@@ -198,10 +205,12 @@
     </section>
 
     <section id="play-command" class="flex flex-column a-i-center">
-      <div class="play-button">
+      <div class="play-button flex">
         <i class="fa-solid fa-shuffle clr-white"></i>
-        <i class="fa-solid fa-caret-left clr-white"></i>
-        <i class="fa-regular fa-circle-play clr-white"></i>
+        <i class="fa-solid fa-caret-left clr-white no-margin"></i>
+        <div class="relative play-relative">
+          <i class="fa-regular fa-circle-play clr-white absolute"></i>
+        </div>
         <i class="fa-solid fa-caret-right clr-white"></i>
         <i class="fa-solid fa-rotate-right"></i>
       </div>

@@ -27,9 +27,14 @@
   }
 
   header a,
-  header h3,
+  #up-nav h3,
   header img.hide{
     display: none;
+  }
+
+  #new-playlist{
+    overflow: hidden;
+    min-height: 0%;
   }
 
   nav.a-i-start,
@@ -38,13 +43,13 @@
   }
 
   header li>img,
-  img.d-none{
+  #up-nav img.d-none{
     padding-right: 0;
   }
 
 
-  img.d-none,s
-  header figure{
+  #up-nav img.d-none,
+  #low-nav figure{
     display: inline;
     margin: 0;
   }

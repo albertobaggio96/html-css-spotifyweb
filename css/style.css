@@ -42,6 +42,10 @@ hr{
   align-items: center;
 }
 
+.a-i-end{
+  align-items: flex-end;
+}
+
 .j-c-end{
   justify-content: end;
 }
@@ -122,7 +126,7 @@ h3{
 
 a:hover{
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a:hover i{
@@ -137,23 +141,13 @@ header{
   width: 170px;
 }
 
-header h3{
-  padding-bottom: 1rem;
-}
-
 header nav{
   height: 100%;
   padding: .6rem;
 }
 
-header nav>img{
-  height: 2rem;
-  margin-bottom: 16px;
-}
-
-header nav>div{
-  height: 100%;
-  width: 100%;
+header nav section{
+  padding-bottom: 0;
 }
 
 header ul{
@@ -173,16 +167,47 @@ img.d-none{
   padding-right: .2rem;
 }
 
-li i{
+
+/* UP NAV */
+#up-nav>img{
+  height: 2rem;
+  margin-bottom: 16px;
+}
+
+#up-nav h3{
+  padding-bottom: 1rem;
+}
+
+#up-nav img.d-none{
+  display: none;
+}
+
+#up-nav i{
   font-size: 1rem;
   color: black;
   background-color: #a3a3a3;
   padding: .5rem;
   margin-right: .2rem;
-  
+  margin-bottom: .7rem;
+}
+/* END UP-NAV */
+
+/* NEW PLAYLIS */
+#new-playlist{
+  overflow: auto;
+  min-height: 45px;
+  height: 100%;
+  width: 100%;
+  justify-self: start;
+}
+/* END NEW PLAYLIST */
+
+/* LOW NAV */
+#low-nav{
+  width: 100%;
 }
 
-header figure{
+#low-nav figure{
   vertical-align: middle;
   width: 19px;
   height: 19px;
@@ -192,23 +217,20 @@ header figure{
   margin-right: .2rem;
 }
 
-header figure img{
+#low-nav div.border-b{
+  border-bottom: 2px solid #a3a3a3;
+}
+
+#low-nav figure img{
   width:100%;
   object-fit: cover;
   padding: 0;
 }
 
-img.d-none{
-  display: none;
-}
-
-div.border-b{
-  border-bottom: 2px solid #a3a3a3;
-}
-
-header nav>div>div{
+#low-nav div{
   padding:.6rem 0;
 }
+/* END LOW NAV */
 /* END HEADER */
 
 
@@ -224,7 +246,7 @@ main{
 
 main>section>h2{
   padding: 16px 0 8px 4px;
-
+  
 }
 /* UPGRADE */
 #upgrade{
@@ -320,6 +342,7 @@ section figure.rounded{
     padding: 8px;
     font-size: .5rem;
     width: 100%;
+    z-index: 1;
   }
 
   #music-playing div,
@@ -329,12 +352,22 @@ section figure.rounded{
     margin-right: 9px;
   }
 
-  #music-playing i{
+  footer i{
     font-size: .8rem;
   }
 
   footer img{
     width: 30px;
+  }
+
+  #music-playing i:hover{
+    color: white;
+  }
+
+  #music-playing div.underline:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
   }
 
   #play-command{
@@ -347,13 +380,28 @@ section figure.rounded{
 
   #play-command i{
     font-size: 1rem;
-    margin-right: 16px;
+    margin-right: 1rem;
   }
 
+  
+  #play-command i.no-margin{
+    margin: 0;
+  }
+  
+  .play-relative{
+    width: 3rem;
+  }
+  
+  #play-command i.fa-circle-play{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  
   #play-command i.fa-circle-play:hover{
     font-size: 1.3rem;
   }
-
 
   div.music-minute{
     width: 100%;
@@ -377,24 +425,24 @@ section figure.rounded{
   div.actual{
     width: 30%;
     height: 3px;
-    background-color: red;
+    background-color: #c3c3c3;
     border-radius: 2px;
   }
 
   div.miss{
     width: 70%;
     height: 3px;
-    background-color: blue;
+    background-color: #595959;
     border-radius: 2px;
   }
 
   div.circle-pointer{
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
-    background-color: aquamarine;
+    background-color: #c3c3c3;
     left: calc(30% - 4px);
-    top: -2.5px;
+    top: -4px;
     display: none;
   }
 
@@ -411,4 +459,3 @@ section figure.rounded{
 
 
 /* END FOOTER */
-
